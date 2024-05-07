@@ -31,3 +31,7 @@
 .text--small {
     @include text(12px);
 }
+
+a{
+    color: variaveis.$corTextoPrincipal;
+}
