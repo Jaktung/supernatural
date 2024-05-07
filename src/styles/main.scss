@@ -1,5 +1,33 @@
-$bgColor: rgb(0, 102, 255);
+@use "header";
+@use "variaveis";
 
-body {
-    background-color: $bgColor;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Supernatural, sans-serif;
+    background-color: variaveis.$corFundo;
+}
+
+@font-face {
+    font-family: Supernatural;
+    src: url(../../assets/fonts/Supernatural_Knight.ttf);
+    font-weight: 400;
+}
+
+@mixin text($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: calc($fontSize + 10px);
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text{
+    @include text;
+}
+
+.text--small {
+    @include text(12px);
 }
