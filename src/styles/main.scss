@@ -1,5 +1,8 @@
 @use "header";
 @use "variaveis";
+@use "hero";
+@use "about";
+@use "protagonists";
 
 *{
     margin: 0;
@@ -7,6 +10,16 @@
     box-sizing: border-box;
     font-family: Supernatural, sans-serif;
     background-color: variaveis.$corFundo;
+}
+
+a{
+    color: variaveis.$corTextoPrincipal;
+}
+
+.container{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 @font-face {
@@ -18,10 +31,18 @@
 @mixin text($fontSize: 16px){
     font-size: $fontSize;
     line-height: calc($fontSize + 10px);
+    color: variaveis.$corTextoSecundario;
+}
+
+@mixin title($fontSize: 22px){
+    font-size: $fontSize;
+    line-height: calc($fontSize + 10px);
+    font-weight: bold;
+    color: variaveis.$corTextoPrincipal;
 }
 
 .text--big {
-    @include text(18px);
+    @include text(16px);
 }
 
 .text{
@@ -32,6 +53,15 @@
     @include text(12px);
 }
 
-a{
-    color: variaveis.$corTextoPrincipal;
+.title--big {
+    @include title(24px);
 }
+
+.title {
+    @include title;
+}
+
+.title--small {
+    @include title(18px);
+}
+

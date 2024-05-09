@@ -9,7 +9,7 @@ function styles() {
 }
 
 function images() {
-    return gulp.src('./src/images/**/*')
+    return gulp.src('src/images/**/*', { encoding: false })
         .pipe(imagemin())
         .pipe(gulp.dest('./dist/images'));
 }
@@ -17,5 +17,6 @@ function images() {
 
 exports.default = gulp.parallel(styles, images);
 exports.watch = function(){
-    gulp.watch('./src/styles/*.scss', gulp.parallel(styles, images))
+    gulp.watch('./src/styles/*.scss', gulp.parallel(styles))
+    gulp.watch('./src/images/**/*', { ignoreInitial: false }, gulp.series(images));
 }
