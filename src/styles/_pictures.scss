@@ -1,0 +1,17 @@
+.pictures{
+    padding: 2vw 5.6w;
+
+    &__list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        list-style: none;
+        gap: 24px;
+        border-radius: 4px;
+
+        &__item{
+            img{
+
+            }
+        }
+    }
+}
