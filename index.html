@@ -64,7 +64,18 @@
                     16
                 </p>
             </li>
-        </ul>   
+            <li class="about__info__item">
+                <h2 class="title--small">
+                    Disponivel em:
+                </h2>
+                <a href="">
+                    <img src="./dist/images/logos/max-logo.webp" alt="">
+                </a>
+                <a href="">
+                    <img src="./dist/images/logos/prime-video-logo.jpg" alt="">
+                </a>
+            </li>
+        </ul> 
     </section>
     <section class="protagonists" id="protagonistas">
         <img src="./dist/images/protagonistas/dean-supernatural.jpg" alt="Dean Winchester">
@@ -81,26 +92,71 @@
         </div>
     </section>
     <section class="pictures">
-        <ul class="pictures__list">
+        <nav class="pictures__tabs">
+            <button data-tab-button="imagens_serie" class="pictures__tabs__button pictures__tabs__button--is-active">
+                Imagens da Série
+            </button>
+            <button data-tab-button="semelhantes" class="pictures__tabs__button">
+                Séries semelhantes
+            </button>
+        </nav>
+        <ul data-tab-id="imagens_serie" class="pictures__list pictures__list--is-active">
             <li class="pictures__list__item">
-                <img src="./dist/images/pictures/sam-e-dean.webp" alt="Castiel">
+                <img src="./dist/images/pictures/castiel.webp" alt="Castiel">
             </li>
             <li class="pictures__list__item">
-                <img src="./dist/images/pictures/sam-e-dean.webp" alt="Castiel">
+                <img src="./dist/images/pictures/sam-e-dean.webp" alt="Sam e Dean">
             </li>
             <li class="pictures__list__item">
-                <img src="./dist/images/pictures/sam-e-dean.webp" alt="Castiel">
+                <img src="./dist/images/pictures/sam-atacado.webp" alt="Sam sendo atacado">
             </li>
             <li class="pictures__list__item">
-                <img src="./dist/images/pictures/sam-e-dean.webp" alt="Castiel">
+                <img src="./dist/images/pictures/sam.webp" alt="Sam">
             </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/pictures/sam-e-dean.webp" alt="Castiel">
+            <li class="pictures__list__item">
+                <img src="./dist/images/pictures/espantalho.webp" alt="Espantalho">
             </li>
-            <li class="shows__list__item">
-                <img src="./dist/images/pictures/sam-e-dean.webp" alt="Castiel">
+            <li class="pictures__list__item">
+                <img src="./dist/images/pictures/casa-do-inferno.webp" alt="Casa do inferno">
+            </li>
+        </ul>
+        <ul data-tab-id="semelhantes" class="pictures__list">
+            <li class="pictures__list__item">
+                <a target="_blank" href="https://www.primevideo.com/-/pt/detail/Fringe/0F6CIYHKEFMS33NKAPBIPMTYLA">
+                    <img src="./dist/images/pictures/fringe.webp" alt="Fringe">
+                </a>
+            </li>
+            <li class="pictures__list__item --less-height">
+                <a target="_blank" href="https://www.primevideo.com/dp/0G0YWYLV3R6TK2ZV1T1YZZ07T8?ref_=dvm_pds_tit_br_sw_s_g_mkw_sFgzCwaa5If-dc&mrntrk=pcrid_687335806740_slid__pgrid_150619102530_pgeo_20092_x__adext__ptid_kwd-321042193596&_mkw_sFgzCwaa5If-dc&mrntrk=pcrid_687335806740_slid__pgrid_150619102530_pgeo_20092_x__adext__ptid_kwd-321042193596&gclid=CjwKCAjwl4yyBhAgEiwADSEjeAUMUeyP-mW-HSomUh6fkK7DiJWMOnpVvojl936UsL37N9ApuLi7HhoCZ3MQAvD_BwE&gclsrc=aw.ds">
+                    <img src="./dist/images/pictures/arquivo-x.webp" alt="Arquivo X">
+                </a>
+            </li>
+            <li class="pictures__list__item">
+                <a target="_blank" href="https://www.max.com/br/pt/shows/os-winchesters/b8269359-30ef-4cc6-bd55-50e8b78ff234">
+                    <img src="./dist/images/pictures/the-winchesters.webp" alt="Os Winchester">
+                </a>
+            </li>
+            <li class="pictures__list__item">
+                <a target="_blank" href="https://www.netflix.com/br/title/80057918">
+                    <img src="./dist/images/pictures/lucifer.jpg" alt="Lucifer">
+                </a>
+            </li>
+            <li class="pictures__list__item">
+                <a target="_blank" href="https://www.netflix.com/br/title/80057281">
+                    <img src="./dist/images/pictures/stranger-thinges.jpg" alt="Stranger Things">
+                </a>
+            </li>
+            <li class="pictures__list__item">
+                <a target="_blank" href="https://www.primevideo.com/-/pt/detail/Grimm-Contos-de-Terror/0S3P21JWTIIQH70XAFZIJK1DP8">
+                    <img src="./dist/images/pictures/grimm.webp" alt="Grimm">
+                </a>
             </li>
         </ul>
     </section>
+    <footer class="footer">
+        <p class="text--small">© Todos os Direitos Reservados (Ebac)</p>
+        <p class="text--small">Desenvolvido por Luiz Carlos de Oliveira</p>
+    </footer>
+    <script src="./dist/scripts/main.js"></script>
 </body>
 </html>

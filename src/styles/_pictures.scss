@@ -1,16 +1,45 @@
+@use "variaveis";
+
 .pictures{
-    padding: 2vw 5.6w;
+    padding: 2vw 5.6vw;
 
     &__list{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: none;
+        grid-template-columns: repeat(3, minmax(0, 1fr)); 
         list-style: none;
         gap: 24px;
         border-radius: 4px;
+        margin-top: 44px;
+
+        &--is-active{
+            display: grid;
+        }
 
         &__item{
             img{
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
+            }
+        }
+    }
 
+    &__tabs{
+        display: flex;
+        justify-content: center;
+
+        &__button{
+            color: variaveis.$corTextoSecundario;
+            font-size: 18px;
+            border: none;
+            padding-bottom: 5px;
+            background: none;
+            text-transform: uppercase;
+            margin: 0 1vw;
+
+            &--is-active{
+                border-bottom: 3px solid variaveis.$corTextoSecundario;
             }
         }
     }

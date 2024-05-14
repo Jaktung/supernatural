@@ -1,0 +1,7 @@
+@use "variaveis";
+
+.footer{
+    padding: 3vw;
+    text-align: center;
+    background-color: variaveis.$corFundoSecundario;
+}
